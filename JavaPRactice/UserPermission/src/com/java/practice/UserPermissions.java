@@ -1,0 +1,29 @@
+package com.java.practice;
+
+import java.io.BufferedInputStream;
+import java.util.Scanner;
+
+public class UserPermissions {
+
+	/**
+	 * Main Method
+	 * */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(new BufferedInputStream(System.in));
+		User users = new User();
+		String line;
+		while(sc.hasNext()){
+			line = sc.nextLine();
+			if(line !=null && line.length() !=0){
+			String[] userinput = line.split(",");	
+			
+			}
+			
+			
+		}
+
+	}
+
+}

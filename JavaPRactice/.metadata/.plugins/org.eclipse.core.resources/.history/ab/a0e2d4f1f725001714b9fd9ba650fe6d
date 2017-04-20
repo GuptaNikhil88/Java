@@ -1,0 +1,13 @@
+package com.java.practice;
+
+public class User {
+
+	String USerName;
+	List<Permission> permissions;
+}
+
+class Permission{
+	
+	String PermissionName;
+	
+}

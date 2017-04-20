@@ -1,0 +1,14 @@
+package com.practice.ds;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class NthPosition {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ArrayList<ArrayList<Integer>> nummatrix = new ArrayList<>();
+		
+	}
+
+}

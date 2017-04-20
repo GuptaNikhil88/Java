@@ -1,0 +1,13 @@
+package com.practice.ds;
+
+import java.util.ArrayList;
+
+public class NthPosition {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+List<Integer, Integer> nums = new ArrayList<>();
+		
+	}
+
+}

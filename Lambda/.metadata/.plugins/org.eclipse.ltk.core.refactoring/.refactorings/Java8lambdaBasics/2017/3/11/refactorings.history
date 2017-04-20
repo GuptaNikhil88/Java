@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.io.jb.practice.TypeInterface&apos; to &apos;TypeInferenceExample&apos;&#x0D;&#x0A;- Original project: &apos;Java8lambdaBasics&apos;&#x0D;&#x0A;- Original element: &apos;com.io.jb.practice.TypeInterface&apos;&#x0D;&#x0A;- Renamed element: &apos;com.io.jb.practice.TypeInferenceExample&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TypeInterface&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.io.jb.practice{TypeInterface.java[TypeInterface" matchStrategy="1" name="TypeInferenceExample" qualified="false" references="true" similarDeclarations="false" stamp="1489786205119" textual="false" version="1.0"/>
+</session>

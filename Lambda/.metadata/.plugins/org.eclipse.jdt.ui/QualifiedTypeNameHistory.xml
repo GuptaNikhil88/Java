@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="com.io.jb.practice.HelloWorldGreeting"/>
+<fullyQualifiedTypeName name="com.io.jb.practice.TypeInferenceExample.StringLengthLambda"/>
+<fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="javax.xml.bind.PrintConversionEvent"/>
+<fullyQualifiedTypeName name="java.util.function.Predicate"/>
+<fullyQualifiedTypeName name="com.io.jb.practice2.ThisReferenceExample"/>
+<fullyQualifiedTypeName name="com.io.jb.practice3.MethodreferenceExampleOne"/>
+</qualifiedTypeNameHistroy>

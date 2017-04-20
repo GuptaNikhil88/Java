@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.ws.testmart.businessi;
+
+import java.util.List;
+
+/**
+ * @author Sony
+ *
+ */
+public interface ProductService {
+	public List<String> getProductCatagory();
+}

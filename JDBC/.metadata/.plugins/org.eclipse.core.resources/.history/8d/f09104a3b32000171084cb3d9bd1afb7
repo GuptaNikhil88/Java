@@ -1,0 +1,61 @@
+package com.jdbc.util;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import java.sql.*;
+public class DbConnect {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Connection con = null;
+		ResultSet rs = null;
+		String query = null;
+		int emp_id;
+		String emp_nm = "";
+		String desig = "";
+		try{
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		    String  url = "jdbc:oracle:thin:@INGNRILPINFM01:1521:ORCL";
+		    String uName = "scott";
+		    String pass = "tiger";
+		    con = DriverManager.getConnection(url,uName,pass);
+		    
+		    query = "select emp_id,name,desig from emp_156392";
+		    Statement st = con.createStatement();
+		    rs = st.executeQuery(query);
+		  		
+		    System.out.print("EMPLOYEE ID"+"\t");
+	    	System.out.print("NAME"+"\t");
+	    	System.out.println("DESIGNATION");
+	    	System.out.println("------------------------------------");
+		    
+		    while(rs.next()){
+		    	
+		    	
+		    	emp_id = rs.getInt("emp_id");
+		    	emp_nm = rs.getString("name");
+		    	desig = rs.getString("desig");
+		    	
+		    	System.out.print(emp_id+"\t"+"\t");
+		    	System.out.print(emp_nm+"\t"+"\t");
+		    	System.out.println(desig);
+		    }
+		    
+		}
+		  catch(ClassNotFoundException ce){
+			ce.printStackTrace();
+		}
+		  catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}
+
+	
+
+

@@ -1,0 +1,20 @@
+package com.ws.testmart;
+
+import java.util.List;
+
+import javax.jws.WebService;
+
+import com.ws.testmart.business.ProductServiceImpl;
+import com.ws.testmart.businessi.ProductService;
+
+@WebService
+public class ProductCatalog {
+
+	ProductService productService = new ProductServiceImpl();
+
+	public List<String> getProductCatagory() {
+
+		return productService.getProductCatagory();
+
+	}
+}

@@ -1,0 +1,22 @@
+package com.practice.ds;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class NthPosition {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int numOfRows = 0;
+		int numOfqueries = 0;
+ArrayList<ArrayList<Integer>> numMatrix = new ArrayList<ArrayList<Integer>>();
+
+numOfRows = sc.nextInt();		
+	for(int i=0; i <numOfRows; i++){
+		
+	}
+
+	}
+
+}

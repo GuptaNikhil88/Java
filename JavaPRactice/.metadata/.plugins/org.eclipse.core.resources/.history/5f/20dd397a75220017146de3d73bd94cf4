@@ -1,0 +1,58 @@
+package com.practice.ds;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class NthPosition {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		int numOfRows = 0;
+		int numOfqueries = 0;
+		int count =0;
+		int length =0;
+		String rowData = "";
+		StringTokenizer st;
+ArrayList<ArrayList<Integer>> numMatrix = new ArrayList<ArrayList<Integer>>();
+ArrayList<ArrayList<Integer>> qMatrix = new ArrayList<ArrayList<Integer>>();
+numOfRows = sc.nextInt();		
+	for(int i=0; i <numOfRows; i++){
+		count =0;
+		rowData = sc.nextLine();
+		ArrayList<Integer> nrow = new ArrayList<Integer>();
+		
+		st = new StringTokenizer(rowData, " ");
+		count = Integer.parseInt(st.nextToken());
+		for(int j =0; j< count; j++){
+		nrow.add(Integer.parseInt(st.nextToken())); 
+	}
+		numMatrix.add(nrow);
+
+	}
+	
+	numOfqueries = sc.nextInt();
+	
+	for(int i=0; i <numOfqueries; i++){
+		count =0;
+		rowData = sc.nextLine();
+		ArrayList<Integer> nrow = new ArrayList<Integer>();
+		
+		st = new StringTokenizer(rowData, " ");
+		count = st.countTokens();
+		for(int j =0; j< count; j++){
+		nrow.add(Integer.parseInt(st.nextToken())); 
+	}
+		qMatrix.add(nrow);
+
+	}
+	/*int iter =0;
+	for(ArrayList<Integer> row: qMatrix){
+		
+		
+	}
+*/
+}
+}

@@ -1,0 +1,56 @@
+package com.practice.ds;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class IDList {
+
+	public static void main(String [] args){
+		
+		Scanner sc= new Scanner(System.in);
+		ArrayList<Integer> numList = new ArrayList<>();
+		int length = sc.nextInt();
+		sc.nextLine();
+		String llst = sc.nextLine();
+		StringTokenizer st = new StringTokenizer(llst, " ");
+		for(int i=0;i<length;i++){
+			numList.add(Integer.parseInt(st.nextToken()));
+		}
+		int queries = sc.nextInt();
+		sc.nextLine();
+		String queryType ="";
+		String insertElemnt = "";
+		int index;
+		int value;
+		for(int j = 0; j<queries; j++){
+			queryType = sc.nextLine();
+			
+			/*switch (queryType.toLowerCase()){
+			case "insert":
+				
+			}*/
+			if(queryType.equalsIgnoreCase("Insert")){
+				insertElemnt = sc.nextLine();
+				StringTokenizer st1 = new StringTokenizer(insertElemnt, " ");
+				index = Integer.parseInt(st1.nextToken());
+				value = Integer.parseInt(st1.nextToken());
+				updateList(index,value);
+				
+			}
+			else if(queryType.equalsIgnoreCase("Delete")){
+				
+			}
+			
+		}
+		
+		
+		
+	}
+	public static void updateList(int index, int value){
+		
+	}
+	
+}
+
+

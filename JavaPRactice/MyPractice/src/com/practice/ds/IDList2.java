@@ -1,0 +1,34 @@
+package com.practice.ds;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class IDList2 {
+	
+	
+	public static void main(String[] args) {
+	    Scanner in = new Scanner(System.in);
+	    short N = in.nextShort();
+	    ArrayList<Integer> L = new ArrayList<>(N);
+	    for (int i = 0; i < N; i++) {
+	        L.add(i, in.nextInt());
+	    }
+	    short Q = in.nextShort();
+	    for (int i = 0; i < Q; i++) {
+	        String operation = in.next("Insert|Delete");
+	        if (operation.equals("Insert")) {
+	            short index = in.nextShort();
+	            Integer item = in.nextInt();
+	            L.add(index, item);
+	        } else if (operation.equals("Delete")) {
+	            short index = in.nextShort();
+	            L.remove(index);
+	        }
+	    }
+	    for (int i : L) {
+	        System.out.print(i + " ");
+	    }
+	    in.close();
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.ws.testmart;
+
+public class ProductCatalog {
+
+	public List<String> getProductCatagory(){
+		
+	}
+}

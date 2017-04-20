@@ -1,0 +1,52 @@
+package com.ws.testmart.business;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.ws.testmart.businessi.ProductService;
+
+public class ProductServiceImpl implements ProductService {
+	List<String> bookList = new ArrayList<>();
+	List<String> movieList = new ArrayList<>();
+	List<String> musicList = new ArrayList<>();
+
+	public ProductServiceImpl() {
+		bookList.add("The White Tiger");
+		bookList.add("The Alchemist");
+		bookList.add("Three Musketeers");
+
+		movieList.add("Minions");
+		movieList.add("Kungfu Panda");
+		movieList.add("The Lone Ranger");
+
+		musicList.add("Soulful");
+		musicList.add("Linkin park");
+		musicList.add("happiness");
+
+	}
+
+	public List<String> getProductCatagory() {
+
+		List<String> categories = new ArrayList<>();
+		categories.add("Books");
+		categories.add("Music");
+		categories.add("Movies");
+		return categories;
+	}
+
+	public List<String> getProducts(String category) {
+		if (category.equalsIgnoreCase("books"))
+			return bookList;
+		else if (category.equalsIgnoreCase("movies"))
+			return movieList;
+		else if (category.equalsIgnoreCase("music"))
+			return musicList;
+		else
+			return null;
+
+	}
+	public boolean addProduct(String category, String Product) {
+		
+		switch category.toLowerCase();
+	}
+}

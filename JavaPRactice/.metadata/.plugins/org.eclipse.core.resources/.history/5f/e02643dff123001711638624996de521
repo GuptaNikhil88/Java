@@ -1,0 +1,36 @@
+package com.practice;
+
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Scanner;
+
+
+
+public class FirstNonRepeated {
+	public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+       	String text = in.next();
+       	boolean flag = false;
+	 Map<Character,Integer> counts = new LinkedHashMap<>(text.length());
+	 
+	
+	
+	for(char a: text.toCharArray()){
+		
+		counts.put(a, counts.containsKey(a)? counts.get(a)+ 1 : 1);
+		
+	}
+	for (Entry<Character,Integer> cc: counts.entrySet()){
+		if(cc.getValue() ==1){
+			
+			flag = true;
+			System.out.println("Non repeated Key:: "+ cc.getKey());
+		}
+		
+	}
+	if(!flag)
+		System.out.println("No non  repeated character found");
+	}
+in.close();
+}

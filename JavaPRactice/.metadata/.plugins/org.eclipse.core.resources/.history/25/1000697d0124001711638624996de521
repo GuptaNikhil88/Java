@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package com.practice.sort;
+
+/**
+ * @author Sony
+ *
+ */
+public class Order implements Comparable<Order> {
+
+	int orderId;
+	String orderType;
+	double orderAmt;
+	
+	
+	
+	public Order(int orderId, String orderType, double orderAmt){
+		this.orderId = orderId;
+		this.orderType = orderType;
+		this.orderAmt = orderAmt;
+		
+	}
+	
+	@override
+	public String toString(){
+		String.valueOf(orderId);
+	}
+	
+	
+}

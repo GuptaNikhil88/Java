@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.ws.testmart.businessi;
+
+/**
+ * @author Sony
+ *
+ */
+public interface ProductService {
+
+}

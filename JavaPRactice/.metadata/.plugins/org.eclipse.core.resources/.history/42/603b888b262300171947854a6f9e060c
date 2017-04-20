@@ -1,0 +1,13 @@
+package com.practice.ds;
+
+import java.util.Scanner;
+
+public class IDList {
+
+	public static void main(String [] args){
+		
+		Scanner sc= new Scanner(System.in);
+		
+	}
+	
+}
